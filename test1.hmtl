@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Test1 Page</title>
+  <title>Test1</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      direction: rtl;
+      text-align: right;
+      background-color: #fdf6e3;
+      color: #333;
+    }
+  </style>
 </head>
 <body>
-  <h1>This is the Test1 subpage</h1>
-  <p>Welcome.</p>
+  <h1>Hexapla Arabica</h1>
+  <p><b>test1</b></p>
 </body>
 </html>
