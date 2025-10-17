@@ -1,120 +1,137 @@
-    body {
-      margin: 0;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
-    }
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
 
-    header {
-      background-color: #fff;
-      text-align: center;
-      padding: 2rem 1rem;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
+header {
+  background-color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
 
-    .logo {
-      max-width: 30%;
-      height: auto;
-      filter: grayscale(100%);
-    }
+.logo {
+  max-width: 30%;
+  height: auto;
+  filter: grayscale(100%);
+}
 
-    nav {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      background-color: #444;
-    }
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #444;
+}
 
-    nav a {
-      color: white;
-      padding: 1rem;
-      text-decoration: none;
-      font-weight: normal;
-      font-variant: small-caps;
-      transition: background-color 0.3s;
-    }
+nav a {
+  color: white;
+  padding: 1rem;
+  text-decoration: none;
+  font-weight: normal;
+  font-variant: small-caps;
+  transition: background-color 0.3s;
+}
 
-    nav a:hover {
-      background-color: #666;
-    }
+nav a:hover {
+  background-color: #666;
+}
 
-    .notice {
-      text-align: center;
-      font-size: 1rem;
-      font-variant: small-caps;
-      color: #444;
-      margin: 1rem 0;
-    }
+.notice {
+  text-align: center;
+  font-size: 1rem;
+  font-variant: small-caps;
+  color: #444;
+  margin: 1rem 0;
+}
 
-    .intro {
-      max-width: 800px;
-      margin: 2rem auto;
-      text-align: left;
-      font-size: 1.1rem;
-      line-height: 1.6;
-      color: #222;
-    }
+.intro {
+  max-width: 800px;
+  margin: 2rem auto;
+  text-align: left;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #222;
+  padding: 0 1rem; /* Added padding for mobile */
+}
 
-    .responsive-image {
-      max-width: 90%;
-      height: auto;
-      display: block;
-      margin: 2rem auto;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
+.responsive-image {
+  max-width: 90%;
+  height: auto;
+  display: block;
+  margin: 2rem auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
 
-    .updates-section {
-      max-width: 800px;
-      margin: 2rem auto;
-    }
+.updates-section {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem; /* Added padding for mobile */
+}
 
-    .updates-title {
-      font-size: 1.2rem;
-      font-weight: bold;
-      text-align: center;
-      font-variant: small-caps;
-      margin-bottom: 1rem;
-    }
+.updates-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  font-variant: small-caps;
+  margin-bottom: 1rem;
+}
 
-    .update-card {
-      background-color: #fff;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      padding: 1rem;
-      margin-bottom: 1rem;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-      transition: background-color 0.3s;
-    }
+.update-card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  transition: background-color 0.3s;
+}
 
-    footer {
-      background-color: #444;
-      color: white;
-      text-align: left;
-      padding: 1.5rem;
-      font-size: 0.9rem;
-      font-variant: small-caps;
-    }
+footer {
+  background-color: #444;
+  color: white;
+  text-align: left;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  font-variant: small-caps;
+}
 
-    footer a {
-      color: #ddd;
-      text-decoration: underline;
-      transition: color 0.3s;
-    }
+footer a {
+  color: #ddd;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
 
-    footer a:hover {
-      color: #fff;
-    }
+footer a:hover {
+  color: #fff;
+}
 
-    @media (max-width: 600px) {
-      nav {
-        flex-direction: column;
-        align-items: center;
-      }
+/* ✅ Responsive Fixes */
+@media (max-width: 768px) {
+  .logo {
+    max-width: 60%; /* Bigger logo on mobile */
+  }
 
-      nav a {
-        width: 100%;
-        text-align: center;
-        border-top: 1px solid #555;
-      }
-    }
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #555;
+  }
+
+  .intro {
+    font-size: 1rem; /* Slightly smaller text */
+    margin: 1rem auto;
+  }
+
+  .responsive-image {
+    max-width: 100%; /* Full width on mobile */
+    margin: 1rem auto;
+  }
+}
