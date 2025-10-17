@@ -137,3 +137,16 @@ footer a:hover {
     margin: 1rem auto;
   }
 }
+
+html, body {
+  overflow-x: hidden; /* Hide horizontal scroll */
+}
+
+nav, header, footer {
+  max-width: 100%; /* Ensure no element exceeds viewport width */
+}
+
+img {
+  max-width: 100%;
+}
+
